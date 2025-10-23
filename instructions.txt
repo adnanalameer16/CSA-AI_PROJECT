@@ -1,0 +1,18 @@
+input json format
+
+{
+    "reporter":"team_alpha",
+    "latitude":9.9312,
+    "longitude":76.2673,
+    "severity":5,
+    "affected_population":12000,
+    "casualties":15,
+    "infrastructure_damage":"hospital collapsed",
+    "accessibility":"partial",
+    "chemical_spill":false
+  }
+
+
+  post to http://localhost:3000/reports to save report
+
+  get from http://localhost:3000/reports to fetch sorted reports
