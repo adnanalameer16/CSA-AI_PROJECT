@@ -13,9 +13,9 @@ const port = process.env.PORT || 3000;
 let pool = null;
 if (USE_DB) {
   pool = new Pool({ connectionString: DATABASE_URL });
-  console.log('✅ Connected to Postgres');
+  console.log('Connected to Postgres');
 } else {
-  console.log('⚙️ Running in memory mode');
+  console.log('Running in memory mode');
 }
 
 const memoryStore = [];
@@ -91,4 +91,4 @@ app.get('/reports', async (_, res) => {
   res.json(data);
 });
 
-app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`))
