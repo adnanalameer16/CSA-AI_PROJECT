@@ -1,0 +1,26 @@
+install postgres
+
+psql -U postgres
+CREATE DATABASE reliefdb;
+\c reliefdb;
+
+CREATE TABLE incident_reports (
+  id SERIAL PRIMARY KEY,
+  reporter VARCHAR(200) NULL,
+  latitude DOUBLE PRECISION NOT NULL,
+  longitude DOUBLE PRECISION NOT NULL,
+  severity INTEGER NOT NULL,
+  affected_population INTEGER DEFAULT 0,
+  casualties INTEGER DEFAULT 0,
+  infrastructure_damage TEXT,
+  accessibility TEXT,
+  chemical_spill BOOLEAN DEFAULT false,
+  time_reported TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  metadata JSONB DEFAULT '{}',
+  score DOUBLE PRECISION,
+  priority_level TEXT,
+  served BOOLEAN DEFAULT false
+);
+
+make changes in env file(password)
+set USE_DB to true
