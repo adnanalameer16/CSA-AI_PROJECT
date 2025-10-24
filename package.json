@@ -1,0 +1,13 @@
+{
+  "name": "ai_pro",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix ./server run dev",
+    "start": "npm --prefix ./server run start",
+    "dev:server": "npm --prefix ./server run dev",
+    "start:server": "npm --prefix ./server run start",
+    "dev:client": "npm --prefix ./client/client run dev",
+    "install:all": "npm --prefix ./server install && npm --prefix ./client/client install"
+  }
+}
