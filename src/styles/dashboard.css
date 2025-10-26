@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f8fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Common card style */
+.zone-form,
+.zone-list,
+.allocation-result {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+/* Input + button layout */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+/* Zone cards */
+.zone-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f0f0f0;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.zone-card button {
+  background-color: #e74c3c;
+  padding: 5px 10px;
+}
+
+.zone-card button:hover {
+  background-color: #c0392b;
+}
