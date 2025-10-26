@@ -1,0 +1,28 @@
+# 🍱 Resource Allocation Dashboard
+
+This module implements a **Resource Allocation System** using React.
+It allows users to enter available resources, add zones with required and minimum quantities, and automatically distribute resources fairly using a backtracking allocation algorithm.
+
+---
+
+## 📂 Folders Modified / Added
+
+| Folder            | Description                                                                                                                                                                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `src/pages/`      | Contains the main `Dashboard.jsx` — integrates all components, manages state, handles allocation logic, and displays the UI.                                                                                                                     |
+| `src/components/` | Contains UI components: <br>• `ZoneForm.jsx` – Form to add zones (with labels and clears after submit). <br>• `ZoneList.jsx` – Displays zones and allows removal. <br>• `AllocationResult.jsx` – Shows final allocation and remaining resources. |
+| `src/utils/`      | Includes `allocate.js`, which handles the recursive allocation algorithm that ensures fair distribution based on available and minimum quantities.                                                                                               |
+| `src/index.css`   | Contains styling for forms, buttons, cards, and labels. Provides a clean and responsive UI.                                                                                                                                                      |
+
+---
+
+## ⚙️ How to Run
+
+### 1. Install dependencies
+
+Make sure you have **Node.js ≥ 20.19.0**
+
+```bash
+npm install
+npm run dev
+```
